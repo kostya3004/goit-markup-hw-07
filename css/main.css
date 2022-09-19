@@ -292,6 +292,50 @@ body {
   color: var(--accent-color);
 }
 
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--transition-prop);
+}
+.social-list-link:hover, .social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list_light-theme {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social-list_light-theme-icon {
+  fill: #AFB1B8;
+  transition: fill var(--transition-prop);
+}
+.social-list_light-theme-link:hover .social-list_light-theme-icon, .social-list_light-theme-link:focus .social-list_light-theme-icon {
+  fill: #FFF;
+}
+
+.social-list_dark-theme-icon {
+  fill: #FFF;
+}
+
+.social-list_dark-theme-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -510,36 +554,6 @@ body {
   margin-bottom: 16px;
 }
 
-.team-card-social-list {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.team-card-social-list-icon {
-  width: 20px;
-  height: 20px;
-  fill: #AFB1B8;
-  transition: fill var(--transition-prop);
-}
-.team-card-social-list-link:hover .team-card-social-list-icon, .team-card-social-list-link:focus .team-card-social-list-icon {
-  fill: #FFF;
-}
-
-.team-card-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: background-color var(--transition-prop);
-}
-.team-card-social-list-link:hover, .team-card-social-list-link:focus {
-  background-color: var(--accent-color);
-}
-
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -604,33 +618,6 @@ address a {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.join-social-list {
-  display: flex;
-  gap: 10px;
-}
-
-.join-social-list-icon {
-  width: 20px;
-  height: 20px;
-  fill: #FFF;
-}
-
-.join-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--transition-prop);
-}
-
-.join-social-list-link:hover,
-.join-social-list-link:focus {
-  background-color: var(--accent-color);
 }
 
 .subscribe-container {
