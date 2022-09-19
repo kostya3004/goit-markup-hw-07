@@ -1,7 +1,12 @@
-footer {
+.page-footer {
     background-color: var(--dark-scheme-bcg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
 }
 
 address a {
@@ -12,17 +17,12 @@ address a {
     color: var(--dark-scheme-text-color);
 }
 
-.contacts-footer {
+.page-footer__address-list-item {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.address-list>li:not(:last-child) {
+.page-footer__address-list>li:not(:last-child) {
     margin-bottom: 9px;
-}
-
-.page-footer-container {
-    display: flex;
-    align-items: baseline;
 }
 
 .join-text {
